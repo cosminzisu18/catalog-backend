@@ -52,3 +52,6 @@ pids
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# local demo data, not shared: each school creates its own accounts
+mock-seed.js
