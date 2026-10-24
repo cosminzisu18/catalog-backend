@@ -102,7 +102,7 @@ in baza de date (tipuri de coloane, chei unice, chei straine si `CHECK`).
 | Absenta | doar pentru ziua de azi; cheie unica elev + materie + zi |
 | Nota sau absenta | pe elev + materie + zi exista cel mult una dintre ele, verificat in tranzactie cu randul elevului blocat |
 | Purtare | numar 1-10, poate doar sa scada; `CHECK` in DB |
-| Orar | zi 1-7, `HH:mm`, inceput < sfarsit (si `CHECK` in DB), fara suprapuneri |
+| Orar | zi 1-5 (luni-vineri; `CHECK 1-7` in DB), `HH:mm`, inceput < sfarsit (si `CHECK` in DB), fara suprapuneri |
 
 API-ul nu face conversii implicite de tip: un numar trimis ca text (`"9"`)
 este refuzat. Campurile in plus din body sunt refuzate
